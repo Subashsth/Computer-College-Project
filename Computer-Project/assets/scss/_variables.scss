@@ -1,0 +1,65 @@
+$fs-h1: clamp(30px, 10vw, 45px);
+$fs-h2: clamp(24px, 9vw, 30px);
+$fs-h3: clamp(20px, 8vw, 24px);
+$fs-h4: clamp(18px, 7vw, 20px);
+$fs-h5: clamp(16px, 10vw, 18px);
+$fs-h6: clamp(14px, 10vw, 16px);
+
+// $fs-h2: 30px;
+// $fs-h3: 24px;
+// $fs-h4: 20px;
+// $fs-h5: 18px;
+// $fs-h6: 16px;
+$fs-small: 14px;
+$fs-extraSmall: 12px;
+
+
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Libre Franklin', sans-serif;
+
+$clr-primary: #1BABFF;
+$clr-secondary: #180862;
+$clr-black: #000000;
+$clr-gray: #cacaca;
+$clr-white: #FFFFFF;
+$clr-accent: #ED6B5D;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $secondary-font;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: $fs-h1;
+}
+
+h2 {
+    font-size: $fs-h2;
+    color: $clr-secondary;
+    line-height: 1.5;
+
+}
+
+h3 {
+    font-size: $fs-h3;
+}
+
+h4 {
+    font-size: $fs-h4;
+}
+
+h5 {
+    font-size: $fs-h5;
+}
+
+h6 {
+    font-size: $fs-h6;
+}

@@ -1,0 +1,33 @@
+.btn {
+    padding: 12px 45px;
+    text-transform: uppercase;
+    border-radius: 0;
+    letter-spacing: 2px;
+    font-size: $fs-small;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+
+}
+
+.btn-primary {
+    background-color: $clr-secondary;
+    transition: 0.5s all;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $clr-secondary;
+    color: $clr-secondary;
+    padding: 8px 30px;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $clr-primary;
+        color: $clr-primary;
+
+
+    }
+
+}

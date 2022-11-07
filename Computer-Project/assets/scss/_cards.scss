@@ -1,0 +1,117 @@
+@import "./mixin";
+
+.card {
+
+    @include sm {
+        margin-bottom: 30px;
+    }
+
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+
+
+    img {
+        transition: 0.5s all;
+
+    }
+
+    filter: drop-shadow(0px 0px 15px rgba(12, 142, 255, 0.3));
+
+    .card-img-top {
+        border-radius: 0;
+
+    }
+
+    &:hover {
+        // img {
+
+        //     transform: scale(1.1);
+        // }
+
+        filter: drop-shadow(0px 0px 20px rgba(12, 142, 255, 0.5));
+        margin-top: -10px;
+
+    }
+
+
+}
+
+
+.service-card {
+
+
+    .icon {
+        position: absolute;
+        background-color: $clr-secondary;
+        padding: 20px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-body {
+        padding: 50px 10px 30px;
+        border-radius: 0;
+        text-align: center;
+
+        .card-text {
+            margin: 20px 0;
+        }
+    }
+}
+
+
+.blog-card {
+    .card-body {
+        padding: 30px;
+
+
+        .info {
+            padding: 10px 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba($color: $clr-black, $alpha: 0.1);
+            color: rgba($color: $clr-black, $alpha: 0.4);
+            gap: 30px;
+
+            .info-item {
+                gap: 5px;
+                font-size: $fs-extraSmall;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.team-card {
+    margin: 10px;
+
+    img {
+
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-body {
+        border-top: 10px solid $clr-primary;
+        // border-bottom: 10px solid $clr-primary;
+        padding: 30px;
+        text-align: center;
+
+        .card-text {
+            margin-bottom: 10px;
+            font-size: $fs-small;
+            opacity: 0.5;
+        }
+
+        .social-group {
+            padding-top: 10px;
+            gap: 20px;
+        }
+    }
+}
