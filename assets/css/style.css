@@ -270,6 +270,9 @@ body {
   body {
     text-align: center;
   }
+  body .contact {
+    text-align: left;
+  }
 }
 
 .navbar {

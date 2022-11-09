@@ -16,6 +16,10 @@ body {
 
     @include sm {
         text-align: center;
+
+        .contact {
+            text-align: left;
+        }
     }
 }
 
