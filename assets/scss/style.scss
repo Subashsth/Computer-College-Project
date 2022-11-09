@@ -17,7 +17,8 @@ body {
     @include sm {
         text-align: center;
 
-        .contact {
+        .contact,
+        .faq {
             text-align: left;
         }
     }

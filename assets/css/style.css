@@ -270,7 +270,8 @@ body {
   body {
     text-align: center;
   }
-  body .contact {
+  body .contact,
+body .faq {
     text-align: left;
   }
 }
