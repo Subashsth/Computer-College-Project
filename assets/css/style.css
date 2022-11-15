@@ -244,7 +244,7 @@ img {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #mouse-circle {
     display: none;
   }
@@ -279,13 +279,13 @@ body .faq {
 .navbar {
   padding: 20px 0 50px 0;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
     padding: 10px 0;
     margin-bottom: 10px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar .navbar-collapse {
     padding-top: 10px;
   }
@@ -336,6 +336,15 @@ body .faq {
   background-color: #1BABFF;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  .hero br {
+    display: inherit;
+  }
+}
 @media (max-width: 576px) {
   .hero {
     text-align: center;
@@ -354,7 +363,7 @@ body .faq {
   background-color: #1BABFF;
   z-index: -1;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero::after {
     width: 100%;
   }
@@ -382,6 +391,12 @@ body .faq {
     margin: 30px 0;
   }
 }
+@media (max-width: 768px) {
+  .hero .hero-img {
+    margin-left: 0;
+    margin-top: 150px;
+  }
+}
 
 .circular-img {
   position: absolute;
@@ -393,6 +408,12 @@ body .faq {
 @media (max-width: 576px) {
   .circular-img {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .circular-img {
+    top: 150px;
+    right: 100px;
   }
 }
 
@@ -415,6 +436,12 @@ body .faq {
 }
 .partners img {
   max-width: 350px;
+  height: 120px;
+}
+@media (max-width: 768px) {
+  .partners img {
+    height: 105px;
+  }
 }
 .partners .hp {
   background-color: #1BABFF;
@@ -491,6 +518,19 @@ body .faq {
   color: #FFFFFF;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .contact .contact-wrapper .contact-info {
+    padding: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .contact-wrapper .contact-info {
+    padding: 30px;
+  }
+}
+.contact .contact-wrapper .contact-info .email-wrapper a {
+  word-break: break-all;
+}
 .contact .contact-wrapper .contact-info .h3 {
   text-transform: uppercase;
   font-weight: 800;
@@ -518,6 +558,11 @@ body .faq {
 }
 .contact .contact-wrapper .form-wrapper {
   padding: 80px;
+}
+@media (max-width: 768px) {
+  .contact .contact-wrapper .form-wrapper {
+    padding: 50px;
+  }
 }
 @media (max-width: 576px) {
   .contact .contact-wrapper .form-wrapper {
@@ -594,6 +639,7 @@ body .faq {
   margin-bottom: 5px;
   display: block;
   transition: 0.5s all;
+  word-break: break-all;
 }
 .footer ul li a:hover {
   margin-left: 15px;

@@ -110,7 +110,7 @@ img {
 }
 
 #mouse-circle {
-    @include sm {
+    @include md {
         display: none;
     }
 }

@@ -22,18 +22,20 @@ body {
             text-align: left;
         }
     }
+
+
 }
 
 .navbar {
     padding: 20px 0 50px 0;
 
-    @include sm {
+    @include md {
         padding: 10px 0;
         margin-bottom: 10px;
     }
 
     .navbar-collapse {
-        @include sm {
+        @include md {
 
             padding-top: 10px;
         }
@@ -102,6 +104,17 @@ body {
 }
 
 .hero {
+
+
+    @include md {
+        text-align: left;
+        padding-bottom: 50px;
+
+        br {
+            display: inherit;
+        }
+    }
+
     @include sm {
         text-align: center;
 
@@ -120,7 +133,7 @@ body {
         background-color: $clr-primary;
         z-index: -1;
 
-        @include sm {
+        @include md {
             width: 100%;
         }
 
@@ -154,6 +167,11 @@ body {
         @include sm {
             margin: 30px 0;
         }
+
+        @include md {
+            margin-left: 0;
+            margin-top: 150px;
+        }
     }
 }
 
@@ -165,6 +183,11 @@ body {
 
     @include sm {
         display: none;
+    }
+
+    @include md {
+        top: 150px;
+        right: 100px;
     }
 }
 
@@ -193,6 +216,13 @@ body {
 .partners {
     img {
         max-width: 350px;
+
+        height: 120px;
+
+        @include md {
+            height: 105px;
+
+        }
     }
 
     .hp {
@@ -296,6 +326,18 @@ body {
             color: $clr-white;
             font-size: $fs-small;
 
+            @include md {
+                padding: 50px;
+            }
+
+            @include sm {
+                padding: 30px;
+            }
+
+            .email-wrapper a {
+                word-break: break-all;
+            }
+
             .h3 {
                 text-transform: uppercase;
                 font-weight: 800;
@@ -333,9 +375,14 @@ body {
         .form-wrapper {
             padding: 80px;
 
+            @include md {
+                padding: 50px;
+            }
+
             @include sm {
                 padding: 30px 20px;
             }
+
 
             label {
                 font-weight: 600;
@@ -419,6 +466,7 @@ body {
                 margin-bottom: 5px;
                 display: block;
                 transition: 0.5s all;
+                word-break: break-all;
 
                 &:hover {
                     margin-left: 15px;
